@@ -16,7 +16,8 @@
     END DFS_Visit
 
 END DFS
-###mini-max
+
+Mini-max
 Minimax(Node, Depth, IsMax)
 
     IF Depth = 0 OR Node is leaf THEN
@@ -30,7 +31,8 @@ Minimax(Node, Depth, IsMax)
     END IF
 
 END Minimax
-###Uniform cost search
+
+Uniform cost search
     CREATE priority queue PQ
     CREATE set Visited
 
@@ -54,7 +56,8 @@ END Minimax
     END WHILE
 
 END UniformCostSearch
-###Greedy Best First search
+
+Greedy Best First search
 
 GreedySearch(Graph, Start, Goal)
 
@@ -69,10 +72,9 @@ GreedySearch(Graph, Start, Goal)
     END WHILE
 
 END GreedySearch
-###Breadth First search
-BFS(Graph, StartNode)
 
-    // Graph is represented using adjacency list
+Breadth First search
+BFS(Graph, StartNode)
 
     CREATE empty queue Q
     CREATE empty set Visited
@@ -93,7 +95,9 @@ BFS(Graph, StartNode)
     END WHILE
 
 END BFS
-###Alpha beta pruning
+
+
+Alpha beta pruning
 AlphaBeta(Node, Depth, α, β, IsMax)
 
     IF Depth = 0 THEN RETURN value
@@ -111,7 +115,9 @@ AlphaBeta(Node, Depth, α, β, IsMax)
     END IF
 
 END AlphaBeta
-### A *search
+
+
+A *search
 AStar(Graph, Start, Goal)
 
     CREATE priority queue PQ
@@ -131,9 +137,9 @@ AStar(Graph, Start, Goal)
     END WHILE
 
 END AStar
-### Water Jug problem
 
-```
+Water Jug problem
+
 WaterJug(Jug1, Jug2, Target)
 
     CREATE queue Q
@@ -153,11 +159,6 @@ WaterJug(Jug1, Jug2, Target)
         GENERATE possible states
         ADD unvisited states to Q
     END WHILE
-
-
-
-
-```
 
     PRINT "Target Not Possible"
 
