@@ -14,9 +14,6 @@
             END IF
         END FOR
     END DFS_Visit
-
-END DFS
-
 Mini-max
 Minimax(Node, Depth, IsMax)
 
@@ -29,9 +26,6 @@ Minimax(Node, Depth, IsMax)
     ELSE
         RETURN min(Minimax(children))
     END IF
-
-END Minimax
-
 Uniform cost search
     CREATE priority queue PQ
     CREATE set Visited
@@ -55,8 +49,6 @@ Uniform cost search
         END IF
     END WHILE
 
-END UniformCostSearch
-
 Greedy Best First search
 
 GreedySearch(Graph, Start, Goal)
@@ -70,8 +62,6 @@ GreedySearch(Graph, Start, Goal)
         IF Node = Goal THEN EXIT
         INSERT neighbors into PQ
     END WHILE
-
-END GreedySearch
 
 Breadth First search
 BFS(Graph, StartNode)
@@ -94,7 +84,7 @@ BFS(Graph, StartNode)
         END FOR
     END WHILE
 
-END BFS
+
 
 
 Alpha beta pruning
@@ -113,8 +103,6 @@ AlphaBeta(Node, Depth, α, β, IsMax)
             IF β ≤ α THEN BREAK
         END FOR
     END IF
-
-END AlphaBeta
 
 
 A *search
@@ -136,7 +124,7 @@ AStar(Graph, Start, Goal)
         END FOR
     END WHILE
 
-END AStar
+
 
 Water Jug problem
 
@@ -162,4 +150,4 @@ WaterJug(Jug1, Jug2, Target)
 
     PRINT "Target Not Possible"
 
-END WaterJug
+
