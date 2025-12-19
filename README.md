@@ -150,9 +150,7 @@ WaterJug(Jug1, Jug2, Target)
 
     PRINT "Target Not Possible"  
 
-    
-    Decision tree    
-    DecisionTree(Dataset, Target)
+ DecisionTree(Dataset, Target)
 
     IF all records belong to same class THEN
         RETURN that class
@@ -171,7 +169,5 @@ WaterJug(Jug1, Jug2, Target)
     END FOR
 
 RETURN Decision Tree
-
-
 
 
