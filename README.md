@@ -149,6 +149,8 @@ WaterJug(Jug1, Jug2, Target)
     END WHILE
 
     PRINT "Target Not Possible"  
+
+    
     Decision tree    
     DecisionTree(Dataset, Target)
 
