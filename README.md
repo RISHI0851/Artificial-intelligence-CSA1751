@@ -148,6 +148,28 @@ WaterJug(Jug1, Jug2, Target)
         ADD unvisited states to Q
     END WHILE
 
-    PRINT "Target Not Possible"
+    PRINT "Target Not Possible"  
+    Decision tree    
+    DecisionTree(Dataset, Target)
+
+    IF all records belong to same class THEN
+        RETURN that class
+    END IF
+
+    IF no attributes left THEN
+        RETURN majority class
+    END IF
+
+    SELECT best attribute using Information Gain
+    CREATE decision node for that attribute
+
+    FOR each value of selected attribute DO
+        SPLIT dataset
+        RECURSIVELY build subtree
+    END FOR
+
+RETURN Decision Tree
+
+
 
 
