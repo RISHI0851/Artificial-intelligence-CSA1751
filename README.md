@@ -171,3 +171,21 @@ WaterJug(Jug1, Jug2, Target)
 RETURN Decision Tree
 
 
+CryptArithmetic()
+
+    FOR all possible digits S,E,N,D,M,O,R,Y from 0 to 9 DO
+        ENSURE all digits are different
+        ENSURE S and M are not zero
+
+        FORM numbers SEND, MORE, MONEY
+
+        IF SEND + MORE = MONEY THEN
+            PRINT solution
+            STOP
+        END IF
+    END FOR
+
+END CryptArithmetic
+
+
+
