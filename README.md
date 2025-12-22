@@ -189,3 +189,21 @@ END CryptArithmetic
 
 
 
+
+NeuralNetwork(Inputs, Weights, Bias)
+
+    INITIALIZE weights and bias
+    FOR each training example DO
+        CALCULATE weighted sum
+        APPLY activation function
+        COMPARE output with target
+        UPDATE weights if error exists
+    END FOR
+
+    RETURN trained model
+
+END NeuralNetwork
+
+
+
+
